@@ -1,0 +1,31 @@
+{
+  "name": "teste/grupowell",
+  "description": "Gestor escolar Grupo Well",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Samuel Furlan",
+      "email": "samuelfurlann@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\" : "source/",
+      "App\\" : "app/"
+    },
+    "files": [
+      "source/Config.php"
+    ]
+  },
+  "require": {
+    "coffeecode/router": "1.0.*",
+    "coffeecode/datalayer": "1.0.*",
+    "league/plates": "v4.0.0-alpha",
+    "dompdf/dompdf": "v0.8.*"
+  }
+}
